@@ -1,0 +1,143 @@
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    float: left;
+}
+.rating > label {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+.rating > label.active:before,
+.rating > label.active ~ label:before,
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+    content: "\2605";
+    position: absolute;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+.modal-footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: stretch;
+    padding: 0.75rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(0.3rem - 1px);
+    border-bottom-left-radius: calc(0.3rem - 1px);
+    align-content: space-around;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.area{
+    min-height: 155px;
+}
+
+.modal-content{
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.card{
+    margin: 35px;
+    width: 1057px;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.positive p ,.negative p ,.all p  {
+    font-size: 55px;
+}
+
+.posts h1{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 69px;
+    background-color: burlywood;
+    font-size: 70px;
+}
+
+.positive,.negative,.all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    background-color: darkcyan;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.btn-add{
+    font-size: 50px;
+    border-radius: 25px;
+    background-color: cadetblue;
+    border: none;
+}
+
+#posts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-add-post{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content-counter{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-counter{
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 70px;
+    background-color: darkcyan;
+}
+
+.time-comment{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.comment{
+    width: auto;
+    margin-left: 182px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    background-color: bisque;
+    padding: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.active{
+    visibility: visible;
+}
+
+.non-active{
+    visibility: hidden;
+}
